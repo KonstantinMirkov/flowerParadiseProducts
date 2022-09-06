@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SecurityApp" />
+        <module name="aopDemoApp" />
+        <module name="Java-training-application" />
+        <module name="hateoas" />
+        <module name="products" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Java-training-application" options="-parameters" />
+      <module name="SecurityApp" options="-parameters" />
+      <module name="aopDemoApp" options="-parameters" />
+      <module name="hateoas" options="-parameters" />
+      <module name="products" options="-parameters --add-exports java.base/sun.nio.cs=ALL-UNNAMED" />
+    </option>
+  </component>
+</project>
