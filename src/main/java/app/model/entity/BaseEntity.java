@@ -4,14 +4,14 @@ import javax.persistence.*;
 
 @MappedSuperclass
 public class BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, updatable = false)
     private long id;
 
     public BaseEntity() {
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, updatable = false)
     public long getId() {
         return id;
     }

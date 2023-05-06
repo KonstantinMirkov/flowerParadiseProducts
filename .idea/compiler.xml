@@ -12,6 +12,7 @@
         <module name="Java-training-application" />
         <module name="hateoas" />
         <module name="products" />
+        <module name="flowerParadiseProducts" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,8 +21,9 @@
       <module name="Java-training-application" options="-parameters" />
       <module name="SecurityApp" options="-parameters" />
       <module name="aopDemoApp" options="-parameters" />
+      <module name="flowerParadiseProducts" options="-parameters" />
       <module name="hateoas" options="-parameters" />
-      <module name="products" options="-parameters --add-exports java.base/sun.nio.cs=ALL-UNNAMED" />
+      <module name="products" options="-parameters" />
     </option>
   </component>
 </project>

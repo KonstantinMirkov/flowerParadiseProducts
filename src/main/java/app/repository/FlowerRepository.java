@@ -1,11 +1,10 @@
 package app.repository;
 
-import app.model.entity.ProductEntity;
+import app.model.entity.FlowerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
-
+public interface FlowerRepository extends JpaRepository<FlowerEntity, Long> {
 
 }
