@@ -14,5 +14,7 @@ public class ConstantMessages {
 
     public static final String QUANTITY_OF_THE_ORDERED_PRODUCT_MUST_BE_AT_LEAST_1 = "The quantity of the ordered product must be at least 1";
 
-    public static final String NO_PRODUCT_WITH_THIS_NAME =  "There is no product with this name.";
+    public static final String NO_PRODUCT_WITH_THIS_NAME = "There is no product with this name.";
+
+    public static final String USER_ROLE_NOT_FOUND = "USER role not found. Please seed the roles.";
 }

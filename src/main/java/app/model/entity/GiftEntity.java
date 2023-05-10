@@ -24,6 +24,10 @@ public class GiftEntity extends BaseEntity {
     @Length(min = 5, max = 250, message = DESCRIPTION_MUST_BE_BETWEEN_5_AND_250_CHARACTERS)
     private String description;
 
+    @Column(name = "image_url")
+    private String imageUrl;
+
+
     @Column
     @Min(value = 1, message = QUANTITY_MUST_BE_AT_LEAST_1_OR_BIGGER)
     @Max(value = 1000, message = QUANTITY_MUST_BE_1000_OR_LOWER)
@@ -35,10 +39,11 @@ public class GiftEntity extends BaseEntity {
     public GiftEntity() {
     }
 
-    public GiftEntity(String name, String type, String description, int quantity, GiftSize giftSize) {
+    public GiftEntity(String name, String type, String description, String imageUrl, int quantity, GiftSize giftSize) {
         this.name = name;
         this.type = type;
         this.description = description;
+        this.imageUrl = imageUrl;
         this.quantity = quantity;
         this.giftSize = giftSize;
     }
@@ -65,6 +70,14 @@ public class GiftEntity extends BaseEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public int getQuantity() {
